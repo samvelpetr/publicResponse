@@ -110,11 +110,9 @@
                 </div>
                 <nav class="header__menu menu-bottom">
                     <ul>
-                        <li><a href="service.html">Обслуживание</a></li>
-                        <li><a class="link-active" href="zayvka.html">Оставить заявку</a></li>
-                        <li><a href="payment-LK.html">Оплата</a></li>
-                        <li><a href="uddom2.html">Умный домофон</a></li>
-                        <li><a href="mobile.html">Мобильное приложение</a></li>
+                        <li><a href="service.html">Почему мы</a></li>
+                        <li><a class="link-active" href="zayvka.html">Умный домофон</a></li>
+                        <li><a href="payment-LK.html">Отзывы</a></li>
                     </ul>
                 </nav>
                 <div class="header__lk">
@@ -584,22 +582,16 @@
                 <div class="application__form__inputs__par">
                     <input class="application__addres" type="text">
                     <span class="application__form__inputs__span">Адрес</span>
-                    <div class="input-clear">
-                        <img src="./assets/image/iconClose.png" alt="">
-                    </div>
                 </div>
-                <div class="application__form__inputs__par">
-                    <input class="application__name" type="text">
-                    <span class="application__form__inputs__span">Имя</span>
-                    <div class="input-clear">
-                        <img src="./assets/image/iconClose.png" alt="">
+                <div class="xaxainp">
+                    <div class="application__form__inputs__par">
+                        <input class="application__name" type="text">
+                        <span class="application__form__inputs__span">Имя</span>
+
                     </div>
-                </div>
-                <div class="application__form__inputs__par">
-                    <input class="application__phone " type="text">
-                    <span class="application__form__inputs__span">Телефон</span>
-                    <div class="input-clear">
-                        <img src="./assets/image/iconClose.png" alt="">
+                    <div class="application__form__inputs__par">
+                        <input class="application__phone " type="text">
+                        <span class="application__form__inputs__span">Телефон</span>
                     </div>
                 </div>
                 <button class="application__send">Отправить</button>
@@ -844,8 +836,43 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script>
         const inputCity = document.querySelector('.application__addres');
+        const inputName = document.querySelector('.application__name');
+        const inputNum = document.querySelector('.application__phone')
+        const arrOfSpan = [...document.querySelectorAll('.application__form__inputs__span')];
         const arrOfCitys = [...document.querySelectorAll('.citys__filter__element')]
+        inputNum.addEventListener('input', () => {
+            if (inputNum.value.length > 0) {
+                arrOfSpan[2].style.display = 'none';
+                inputNum.style.paddingTop = '3px'
+
+            }
+            else {
+                arrOfSpan[2].style.display = 'block';
+                inputNum.style.paddingTop = '20px'
+
+            }
+        })
+        inputName.addEventListener('input', () => {
+            if (inputName.value.length > 0) {
+                arrOfSpan[1].style.display = 'none';
+                inputName.style.paddingTop = '3px'
+
+            }
+            else {
+                arrOfSpan[1].style.display = 'block';
+                inputName.style.paddingTop = '20px'
+
+            }
+        })
         inputCity.addEventListener('input', () => {
+            if (inputCity.value.length > 0) {
+                arrOfSpan[0].style.display = 'none';
+                inputCity.style.paddingTop = '3px'
+            }
+            else {
+                arrOfSpan[0].style.display = 'block';
+                inputCity.style.paddingTop = '20px'
+            }
             arrOfCitys.forEach(elem => {
                 elem.classList.remove('Dblock')
             })
@@ -876,19 +903,7 @@
    
    
    
-    <script>
-        const details = document.querySelectorAll('.question__details');
-        const detailsP = document.querySelectorAll('.question__details p');
-        const detailsDiv = document.querySelectorAll('.question__summary > div')
-
-        details.forEach((deta, i) => {
-            deta.onclick = () => {
-                deta.classList.toggle('addedDetails');
-                detailsP[i].classList.toggle('addedP')
-                detailsDiv[i].classList.toggle('addedDiv')
-            }
-        })
-    </script>
+    
     
     
     <script>
