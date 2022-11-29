@@ -110,7 +110,7 @@
       <span class="closer6"></span>
       <div class="pop-emoji-text-red">
         <img class="emoji-face" src="assets/image/Message/bl.png">
-        <h3>Ваше обращение отправлено</h3>
+        <h3 class="your-application-send">Ваше обращение отправлено</h3>
         <p>Мы внимательно ознакомимся с ситуацией и свяжемся с вами в ближайшее время</p>
       </div>
       <div class="btn-emoji-link">
@@ -124,7 +124,7 @@
       <span class="closer7"></span>
       <div class="pop-emoji-text-sorry">
         <img class="emoji-face" src="assets/image/Message/rd.png">
-        <h3>Сожалеем, но мы не обслуживаем данный адрес</h3>
+        <h3>Сожалеем, но мы не обслуживаем данный адрес</h3>
         <p>Для подключения вашего адреса оставьте заявку и станьте нашим абонентом</p>
       </div>
       <div class="btn-emoji-link-red">
@@ -136,6 +136,14 @@
   <!-- ==================оформление заявки да нет========================================= -->
   <div class="popup__overlay8 hidden8">
     <div class="yesno">
+     <div class="yesno-header">
+         <div class="yesno-logo">
+              <img src="assets\image\logo-black.png" alt="">
+         </div>
+         <div class="yesno-close">
+             <span class="closer-yesno"></span>
+         </div>
+     </div>
       <span class="closer8"></span>
 
       <h3 class="title-yesno">Оформление заявки</h3>
@@ -167,9 +175,7 @@
         <div class="btn_tgl">
           <a href="#"><button type="submit">Отправить</button></a>
         </div>
-        <span>Нажимая на кнопку, вы даёте согласие<br> на обработку персональных данных</span>
-
-
+        <span class="yasno-last-span">Нажимая на кнопку, вы даёте согласие<br> на обработку <a href="#"> персональных данных </a></span>
       </form>
     </div>
   </div>
@@ -370,6 +376,7 @@
     var popup8 = document.querySelector(".popup__overlay8");
     var btn8 = document.querySelector(".box-btn8");
     var close8 = document.querySelector(".closer8");
+    const closerYesno = document.querySelector('.closer-yesno');
 
 
 
@@ -389,6 +396,10 @@
       event.preventDefault();
       popup8.classList.add("hidden8");
     });
+    closerYesno.addEventListener('click',function(event) {
+        event.preventDefault();
+        popup8.classList.add("hidden8");
+    })
 
     var popup9 = document.querySelector(".popup__overlay9");
     var btn9 = document.querySelector(".box-btn9");

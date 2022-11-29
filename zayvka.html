@@ -75,7 +75,8 @@
             </div>
             <div class="footer__contacts" style="margin-top: 0">
                 <a href="" class="footer__vk"><img src="assets\image\VK_icon.png" alt="логотип вконтакте"></a>
-                <a href="" class="footer__ok"><img src="assets/image/footlog/odnoklass.png" alt="логотип одноклассники"></a>
+                <a href="" class="footer__ok"><img src="assets/image/footlog/odnoklass.png"
+                        alt="логотип одноклассники"></a>
                 <a href="" class="footer__youtube"><img src="assets\image\Youtube.png" alt="логотип Youtube"></a>
                 <a href="" class="footer__tg"><img src="assets/image/footlog/telega.png" alt="логотип телеграмм"></a>
             </div>
@@ -161,10 +162,10 @@
             <p>Узнавайте актуальную информацию об оборудовании, контролируйте расчёты и отслеживайте статус
                 ваших
                 заявок</p>
-            <button href="#" class="offer_knopka box-btn">Зарегистрироваться</button>
-            <div class="popup__overlay hidden">
+            <button href="#" class="offer_knopka box-btn-bt1">Зарегистрироваться</button>
+            <div class="popup__overlay popup1  hidden">
                 <div class="dlg-modal1">
-                    <span class="closer"></span>
+                    <span class="closer closerX"></span>
                     <div class="pop-1-text">
                         <h2>Воспользуйтесь личным кабинетом</h2>
                         <p>Там вы сможете не только оставить заявку, но и отслеживать статус её выполнения</p>
@@ -184,6 +185,8 @@
                 <p>Оставьте заявку на ремонт оборудования,
                     вызов мастера или покупку дополнительного оборудования в несколько кликов.
                     Вы можете написать нам в свободной форме и даже прикрепить документ, если это необходимо</p>
+                <p class="cetions__text1">Оставьте заявку на ремонт оборудования, вызов мастера или покупку
+                    дополнительного оборудования в несколько кликов. </p>
                 <div>
                     <button class="news__button box-btn2" style="margin-top:130px">Оставить заявку</button>
 
@@ -195,10 +198,13 @@
                             <p>Укажите ваш адрес, необходимое количество ключей<br> и выберите удобный способ доставки
                             </p>
                             <form class="key_form">
-                                <div class="key_adres"><input id="addres" class="key_addres" placeholder="Адрес" name="adres" required></div>
+                                <div class="key_adres"><input id="addres" class="key_addres" placeholder="Адрес"
+                                        name="adres" required></div>
                                 <div class="block_form">
-                                    <input type="text" id="username" class="username" placeholder="Имя" name="username" required>
-                                    <input type="text" id="phone" class="phone" placeholder="Телефон" name="phone" required>
+                                    <input type="text" id="username" class="username" placeholder="Имя" name="username"
+                                        required>
+                                    <input type="text" id="phone" class="phone" placeholder="Телефон" name="phone"
+                                        required>
                                     <select name="key">
                                         <option>1</option>
                                         <option>2</option>
@@ -209,7 +215,8 @@
                                     <a href="#"><button type="submit">Отправить</button></a>
 
                                 </div>
-                                <span class="somespan">Нажимая на кнопку, вы даёте согласие<br> на обработку персональных данных</span>
+                                <span class="somespan">Нажимая на кнопку, вы даёте согласие<br> на обработку
+                                    персональных данных</span>
                             </form>
                         </div>
                     </div>
@@ -224,89 +231,225 @@
                 <h2>Дополнительные ключи</h2>
                 <p style="width: 330px">Закажите оригинальные ключи от домофона с доставкой на дом</p>
                 <div>
-                    <button class="news__button box-btn1" style="margin-top:167.5px !important;">Купить ключи</button>
+                    <button class="news__button box-btn1" style="margin-top:167.5px ;">Купить ключи</button>
                     <div class="popup__overlay2 hidden2">
                         <div class="dlg-modal2">
-
-                            <span class="closer2"></span>
-                            <h3>Оставить обращение</h3>
-                            <p>Опишите подробно вашу ситуацию и приложите фотографии,<br>это поможет быстрее её решить
-                            </p>
-                            <form class="key_form">
-                                <div class="key_adres"><input id="addres" class="key_addres" placeholder="Адрес" name="adres" required></div>
-                                <div class="key_adres"><input id="addres" class="key_addres" placeholder="Имя" name="username" required></div>
-                                <div class="block_form1">
-                                    <input type="text" id="phone" class="phone" placeholder="Телефон" name="phone" required>
-                                    <input type="text" id="username" class="phone" placeholder="Email" name="username" required>
-                                </div>
-                                <div class="tema-obr">
-                                    <span>Тема обращения</span>
-                                    <div class="checklist input-wrap">
-                                        <input class="checklist__input input-control" type="checkbox" id="domofon" value="Домофон" data-value="multiple" name="domofon" data-name="domofon">
-                                        <label class="checklist__item" for="domofon">Домофон
-                                            <span class="close">
-                                                <img src="assets/image/close.png">
-                                            </span>
-                                        </label>
-                                        <input class="checklist__input input-control" type="checkbox" id="trubka" value="Трубка" data-value="multiple" name="trubka" data-name="trubka">
-                                        <label class="checklist__item" for="trubka">Трубка
-                                            <span class="close">
-                                                <img src="assets/image/close.png">
-                                            </span>
-                                        </label>
-                                        <input class="checklist__input input-control" type="checkbox" id="app" value="Мобильное приложение" data-value="multiple" name="app" data-name="app">
-                                        <label class="checklist__item" for="app">Мобильное приложение
-                                            <span class="close">
-                                                <img src="assets/image/close.png">
-                                            </span>
-                                        </label>
-                                        <input class="checklist__input input-control" type="checkbox" id="key" value="Ключ" data-value="multiple" name="key" data-name="key">
-                                        <label class="checklist__item" for="key">Ключ
-                                            <span class="close">
-                                                <img src="assets/image/close.png">
-                                            </span>
-                                        </label>
-                                        <input class="checklist__input input-control" type="checkbox" id="chek" value="Квитанции" data-value="multiple" name="chek" data-name="chek">
-                                        <label class="checklist__item" for="chek">Квитанции
-                                            <span class="close">
-                                                <img src="assets/image/close.png">
-                                            </span>
-                                        </label>
-                                        <input class="checklist__input input-control" type="checkbox" id="quastion" value="Вопрос" data-value="multiple" name="quastion" data-name="quastion">
-                                        <label class="checklist__item" for="quastion">Вопрос
-                                            <span class="close">
-                                                <img src="assets/image/close.png">
-                                            </span>
-                                        </label>
-
-                                        <input class="input-control" type="hidden" value="not_tag" name="not_tag">
+                            <div class="overlay__header overlay__header1">
+                                <div class="container">
+                                    <div>
+                                        <a href="index.html">
+                                            <img src="./assets/image/whywe/cifralLogo.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <img class="closeX4" src="./assets/image/whywe/x2.png" alt="">
                                     </div>
 
-                                    <textarea placeholder="Расскажите, что случилось"></textarea>
-
                                 </div>
-                                <label class="castom-file">
-                                    <div class="file-wrp">
-                                        <input class="file-file" type="file">
-                                        <div class="text-wrp">
-                                            <span class="text-file">Выберите файл</span>
-                                            <span class="text-file-sk">или перетащите в поле</span>
-                                            <p>PDF, JPG, PNG до 10 файлов (общий размер 20 Мбайт)</p>
+
+                            </div>
+                            <div class="container4">
+
+                                <div class="overlay__line line1"></div>
+
+                                <span class="closer2"></span>
+                                <h3>Оставить обращение</h3>
+                                <p>Опишите подробно вашу ситуацию и приложите фотографии,<br>это поможет быстрее
+                                    её решить
+                                </p>
+                                <form class="key_form">
+                                    <div class="application__form__inputs__par  key_adres">
+                                        <input class="key_addres" id="addres" type="text">
+                                        <span class="application__form__inputs__span">Адрес</span>
+                                    </div>
+
+                                    <div class="application__form__inputs__par  key_adres">
+                                        <input class="key_addres" id="addres" type="text">
+                                        <span class="application__form__inputs__span">Имя</span>
+                                    </div>
+                                    <div class="block_form1">
+                                        <div class="application__form__inputs__par inpMinPar  key_adres">
+                                            <input class="key_addres" id="addres" type="text">
+                                            <span class="application__form__inputs__span">Телефон</span>
+                                        </div>
+                                        <div class="application__form__inputs__par inpMinPar  key_adres">
+                                            <input class="key_addres" id="addres" type="text">
+                                            <span class="application__form__inputs__span">Email</span>
                                         </div>
                                     </div>
-                                </label>
-                                <div class="btn_submit">
-                                    <a href="#"><button type="submit">Отправить</button></a>
+                                    <div class="tema-obr">
+                                        <span>Тема обращения</span>
+                                        <div class="checklist input-wrap">
+                                            <input class="checklist__input input-control" type="checkbox" id="domofon"
+                                                value="Домофон" data-value="multiple" name="domofon"
+                                                data-name="domofon">
+                                            <label class="checklist__item" for="domofon">Домофон
+                                                <span class="close">
+                                                    <img src="assets/image/close.png">
+                                                </span>
+                                            </label>
+                                            <input class="checklist__input input-control" type="checkbox" id="trubka"
+                                                value="Трубка" data-value="multiple" name="trubka" data-name="trubka">
+                                            <label class="checklist__item" for="trubka">Трубка
+                                                <span class="close">
+                                                    <img src="assets/image/close.png">
+                                                </span>
+                                            </label>
+                                            <input class="checklist__input input-control" type="checkbox" id="app"
+                                                value="Мобильное приложение" data-value="multiple" name="app"
+                                                data-name="app">
+                                            <label class="checklist__item checklistItem1" for="app">Мобильное приложение
+                                                <span class="close close4">
+                                                    <img src="assets/image/close.png">
+                                                </span>
+                                            </label>
+                                            <input class="checklist__input input-control" type="checkbox" id="key"
+                                                value="Ключ" data-value="multiple" name="key" data-name="key">
+                                            <label class="checklist__item" for="key">Ключ
+                                                <span class="close">
+                                                    <img src="assets/image/close.png">
+                                                </span>
+                                            </label>
+                                            <input class="checklist__input input-control" type="checkbox" id="chek"
+                                                value="Квитанции" data-value="multiple" name="chek" data-name="chek">
+                                            <label class="checklist__item" for="chek">Квитанции
+                                                <span class="close">
+                                                    <img src="assets/image/close.png">
+                                                </span>
+                                            </label>
+                                            <input class="checklist__input input-control" type="checkbox" id="quastion"
+                                                value="Вопрос" data-value="multiple" name="quastion"
+                                                data-name="quastion">
+                                            <label class="checklist__item" for="quastion">Вопрос
+                                                <span class="close">
+                                                    <img src="assets/image/close.png">
+                                                </span>
+                                            </label>
 
-                                </div>
-                                <span>Нажимая на кнопку, вы даёте согласие<br> на обработку персональных данных</span>
-                            </form>
+                                            <input class="input-control" type="hidden" value="not_tag" name="not_tag">
+                                        </div>
+                                        <div class="application__form__inputs__par textarea" >
+                                            <input type="text" >
+                                            <span class="application__form__inputs__span">Расскажите,
+                                                что случилось</span>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="filesLengthDiv"></div>
+                                    <div class="filesPar">
+                                        <div class="filesPar__item">
+                                            sadsadadas
+                                        </div>
+                                    </div>
+                                    <label class="castom-file">
+                                        <div class="fild-wrp1">
+                                            <div>
+                                                <img src="./assets/image/whywe/file.png" alt="">
+                                                Прикрепить файлы
+                                            </div>
+                                            <p>PDF, JPG, PNG до 10 файлов (общий размер 20 Мбайт)</p>
+                                        </div>
+                                        <div class="file-wrp">
+                                            <input class="file-file" multiple name='files[]' type="file">
+                                            <div class="text-wrp">
+                                                <span class="text-file">Выберите файл</span>
+                                                <span class="text-file-sk">или перетащите в поле</span>
+                                                <p>PDF, JPG, PNG до 10 файлов (общий размер 20 Мбайт)</p>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <div class="sendDiv">
+                                        <button>Отправить</button>
+                                        <p>Нажимая на кнопку, вы даёте согласие на обработку <a href=""> персональных данных </a>
+                                        </p>
+                                    </div>
+                
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="cections_img">
                 <img src="assets/image/brelok.png">
+            </div>
+        </div>
+    </div>
+    <div class="popup__overlay2_1">
+        <div class="overlay__header">
+            <div class="container">
+                <div>
+                    <a href="index.html">
+                        <img src="./assets/image/whywe/cifralLogo.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <img class="closeX1" src="./assets/image/whywe/x2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="overlay__body">
+            <div class="container">
+                <div class="overlay__line"></div>
+                <h2>Оставить заявку на покупку дополнительных ключей</h2>
+                <p>Укажите ваш адрес, необходимое количество ключей и выберите удобный способ доставки</p>
+                <form class="application__form form1">
+                    <div class="application__form__inputs__par">
+                        <input class="application__addres" type="text">
+                        <span class="application__form__inputs__span">Адрес</span>
+                    </div>
+                    <div class="application__form__inputs__par">
+                        <input class="application__name" type="text">
+                        <span class="application__form__inputs__span">Имя</span>
+
+                    </div>
+                    <div class="application__form__inputs__par">
+                        <input type='text' required maxlength="13" id="tel" class="application__phone">
+                        <span class="application__form__inputs__span">Телефон</span>
+                    </div>
+                    <h2>Укажите количество ключей</h2>
+                    <div class="plusOrMinusPar">
+                        <button><img src="./assets/image/whywe/-.png" alt=""></button>
+                        <input type="text" readonly value="1" class="valueKeys">
+                        <button><img src="./assets/image/whywe/+.png" alt=""></button>
+                    </div>
+                    <div class="sendDiv">
+                        <button>Отправить</button>
+                        <p>Нажимая на кнопку, вы даёте согласие на обработку <a href=""> персональных данных </a>
+                        </p>
+                    </div>
+
+                    <div class="citys__filter__par">
+                        <div class="citys__filter__element">Архангельск</div>
+                        <div class="citys__filter__element">Брянск</div>
+                        <div class="citys__filter__element">Дзержинск</div>
+                        <div class="citys__filter__element">Екатеринбург</div>
+                        <div class="citys__filter__element">Заволжье</div>
+                        <div class="citys__filter__element">Ижевск</div>
+                        <div class="citys__filter__element">Калининград</div>
+                        <div class="citys__filter__element">Кемерово</div>
+                        <div class="citys__filter__element">Курск</div>
+                        <div class="citys__filter__element">Междуреченск</div>
+                        <div class="citys__filter__element">Мурманск</div>
+                        <div class="citys__filter__element">Нижний Новгород</div>
+                        <div class="citys__filter__element">Новокузнецк</div>
+                        <div class="citys__filter__element">Новокуйбышевск</div>
+                        <div class="citys__filter__element">Одинцово</div>
+                        <div class="citys__filter__element">Оренбург</div>
+                        <div class="citys__filter__element">Осинники</div>
+                        <div class="citys__filter__element">Пенза</div>
+                        <div class="citys__filter__element">Ростов-на-Дону</div>
+                        <div class="citys__filter__element">Самара</div>
+                        <div class="citys__filter__element">Санкт-Петербург</div>
+                        <div class="citys__filter__element">Саранск</div>
+                        <div class="citys__filter__element">Саратов</div>
+                        <div class="citys__filter__element">Северодвинск</div>
+                        <div class="citys__filter__element">Тольятти</div>
+                        <div class="citys__filter__element">Челябинск</div>
+                        <div class="citys__filter__element">Энгельс</div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -362,7 +505,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="etap_btn"><a class="news__button" style="margin-top:0 !important;" href="#">Перейти в личный
+                <div class="etap_btn"><a class="news__button" style="margin-top:0 !important;" href="#">Перейти
+                        в личный
                         кабинет</a></div>
             </div>
             <div class="sposob_social">
@@ -431,46 +575,66 @@
             <div class="forma_block">
                 <div class="forma_name">
                     <span>Название<br> заявления</span>
-                    <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a></div>
+                    <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px"
+                                width="21px" src="./assets/image/save.png" alt=""></a>
+                    </div>
                 </div>
                 <div class="forma_name">
                     <span>Название<br> заявления</span>
-                    <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a></div>
+                    <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px"
+                                width="21px" src="./assets/image/save.png" alt=""></a>
+                    </div>
                 </div>
                 <div class="forma_name">
                     <span>Название<br> заявления</span>
-                    <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a></div>
+                    <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px"
+                                width="21px" src="./assets/image/save.png" alt=""></a>
+                    </div>
                 </div>
                 <div class="forma_name">
                     <span>Название<br> заявления</span>
-                    <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a></div>
+                    <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px"
+                                width="21px" src="./assets/image/save.png" alt=""></a>
+                    </div>
                 </div>
                 <div class="forma_name">
                     <span>Название<br> заявления</span>
-                    <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a></div>
+                    <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px"
+                                width="21px" src="./assets/image/save.png" alt=""></a>
+                    </div>
                 </div>
             </div>
             <div class="swiper swiper1">
                 <div class="swiper-wrapper">
                     <div class="forma_name swiper-slide">
                         <span>Название<br> заявления</span>
-                        <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a></div>
+                        <div class="forma_btn"><a class="forma__button" href="#">Скачать <img
+                                    style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a>
+                        </div>
                     </div>
                     <div class="forma_name swiper-slide">
                         <span>Название<br> заявления</span>
-                        <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a></div>
+                        <div class="forma_btn"><a class="forma__button" href="#">Скачать <img
+                                    style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a>
+                        </div>
                     </div>
                     <div class="forma_name swiper-slide">
                         <span>Название<br> заявления</span>
-                        <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a></div>
+                        <div class="forma_btn"><a class="forma__button" href="#">Скачать <img
+                                    style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a>
+                        </div>
                     </div>
                     <div class="forma_name swiper-slide">
                         <span>Название<br> заявления</span>
-                        <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a></div>
+                        <div class="forma_btn"><a class="forma__button" href="#">Скачать <img
+                                    style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a>
+                        </div>
                     </div>
                     <div class="forma_name swiper-slide">
                         <span>Название<br> заявления</span>
-                        <div class="forma_btn"><a class="forma__button" href="#">Скачать <img style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a></div>
+                        <div class="forma_btn"><a class="forma__button" href="#">Скачать <img
+                                    style="padding-left: 4.3px" width="21px" src="./assets/image/save.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -503,9 +667,12 @@
                     <p class="footer__text"=="">Ежедневно 08:00–20:00</p>
                     <div class="footer__contacts">
                         <a href="" class="footer__vk"><img src="assets\image\VK_icon.png" alt="логотип вконтакте"></a>
-                        <a href="" class="footer__ok"><img src="assets/image/footlog/odnoklass.png" alt="логотип одноклассники"></a>
-                        <a href="" class="footer__youtube"><img src="assets\image\Youtube.png" alt="логотип Youtube"></a>
-                        <a href="" class="footer__tg"><img src="assets/image/footlog/telega.png" alt="логотип телеграмм"></a>
+                        <a href="" class="footer__ok"><img src="assets/image/footlog/odnoklass.png"
+                                alt="логотип одноклассники"></a>
+                        <a href="" class="footer__youtube"><img src="assets\image\Youtube.png"
+                                alt="логотип Youtube"></a>
+                        <a href="" class="footer__tg"><img src="assets/image/footlog/telega.png"
+                                alt="логотип телеграмм"></a>
                     </div>
                 </div>
                 <div class="footer__column">
@@ -635,16 +802,16 @@
 
     <script src="assets/js/haway.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
- <script>
+    <script>
         const swiper = new Swiper('.swiper1', {
             freeMode: true,
             slidesPerView: 1.3,
             spaceBetween: 16,
-            setWrapperSize:true,
-            width:319,
+            setWrapperSize: true,
+            width: 319,
 
         });
-       
+
     </script>
 
 

@@ -75,7 +75,8 @@
             </div>
             <div class="footer__contacts" style="margin-top: 0">
                 <a href="" class="footer__vk"><img src="assets\image\VK_icon.png" alt="логотип вконтакте"></a>
-                <a href="" class="footer__ok"><img src="assets/image/footlog/odnoklass.png" alt="логотип одноклассники"></a>
+                <a href="" class="footer__ok"><img src="assets/image/footlog/odnoklass.png"
+                        alt="логотип одноклассники"></a>
                 <a href="" class="footer__youtube"><img src="assets\image\Youtube.png" alt="логотип Youtube"></a>
                 <a href="" class="footer__tg"><img src="assets/image/footlog/telega.png" alt="логотип телеграмм"></a>
             </div>
@@ -129,6 +130,23 @@
     </header>
 
     <section class="whywe__section1">
+
+        <div class="whywe__section1__block1Swipper">
+            <div class="swiper swiper7">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                        <img width="100%" src="./assets/image/whywe/whyweSlider1.png" alt="">
+                    </div>
+                    <div class="swiper-slide" >
+                        <img width="100%" src="./assets/image/whywe/whyweSlider2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="100%" src="./assets/image/whywe/whyweSlider3.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
         <div class="container">
             <div class="whywe__section1__block1">
                 <h1>Вы будете в восторге от Умного домофона</h1>
@@ -325,9 +343,12 @@
                     <p class="footer__text"=="">Ежедневно 08:00–20:00</p>
                     <div class="footer__contacts">
                         <a href="" class="footer__vk"><img src="assets\image\VK_icon.png" alt="логотип вконтакте"></a>
-                        <a href="" class="footer__ok"><img src="assets/image/footlog/odnoklass.png" alt="логотип одноклассники"></a>
-                        <a href="" class="footer__youtube"><img src="assets\image\Youtube.png" alt="логотип Youtube"></a>
-                        <a href="" class="footer__tg"><img src="assets/image/footlog/telega.png" alt="логотип телеграмм"></a>
+                        <a href="" class="footer__ok"><img src="assets/image/footlog/odnoklass.png"
+                                alt="логотип одноклассники"></a>
+                        <a href="" class="footer__youtube"><img src="assets\image\Youtube.png"
+                                alt="логотип Youtube"></a>
+                        <a href="" class="footer__tg"><img src="assets/image/footlog/telega.png"
+                                alt="логотип телеграмм"></a>
                     </div>
                 </div>
                 <div class="footer__column">
@@ -455,7 +476,31 @@
         </div>
     </footer>
     <script src="./assets/js/haway.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+        const swiper = new Swiper('.swiper7', {
+            // centeredSlides:true,
+            // initialSlide:2,
+            // spaceBetween: 12,
+            setWrapperSize: true,
+            width:  450,
+            slidesPerView: 1,
+
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar'
+            },
+            breakpoints:{
+                450:{
+                    width:500
+                }
+            },
+            autoplay:{
+                delay:1500,
+                stopOnLastSlide:true,
+                disableOnInteraction:false
+            }
+        });
         const foto = document.querySelector('.foto');
         const i1 = document.querySelector('.i1');
         const i2 = document.querySelector('.i2');
