@@ -13878,7 +13878,9 @@ details p span {
     
     .events-emish {
         padding: 55px 0 !important;
-        padding-bottom: 40px !important
+        padding-bottom: 40px !important;
+        width: 100vw;
+        overflow-x: hidden;
     }
     
     .partner__title.title-2 {
@@ -13940,6 +13942,7 @@ details p span {
 
     .news__title {
         font-size: 28px;
+        padding-bottom: 24px;
     }
 
     .slider2 {
@@ -13972,9 +13975,12 @@ details p span {
 
     .container1,
     .container2 {
-        max-width: 100%;
+        max-width: 100% !important;
     }
-
+    .news{
+        width: 100vw;
+        overflow-x: hidden;
+    }
     .windows__link {
         display: none !important;
     }
