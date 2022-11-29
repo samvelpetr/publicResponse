@@ -7024,6 +7024,10 @@ details p span {
     color: rgba(44, 59, 72, 0.8);
 }
 
+.daje-br-kpanq {
+    display: none;
+}
+
 .feedback__item h4,
 .swiper-slide h4 {
     font-weight: 600;
@@ -9315,10 +9319,6 @@ details p span {
     gap: 80px;
 }
 
-.slick-track {
-    gap: 80px;
-}
-
 .enurishdiviarajip {
     margin-bottom: 8px !important;
     font-size: 14px !important;
@@ -10482,7 +10482,7 @@ details p span {
     }
 
     .wrapper-slider .slick-dots {
-        bottom: -30px;
+        bottom: -36px;
     }
 
     .wrapper-slider .slick-dots li {
@@ -11384,7 +11384,11 @@ details p span {
     }
 
     .mobile__title {
-        font-size: 28px;
+        font-size: 27px;
+    }
+    
+    .mobile__text {
+        width: 94%;
     }
 
     .events__wrapper {
@@ -13485,6 +13489,24 @@ details p span {
     .sendDiv button {
         width: 100%;
     }
+    .swiper7{
+        display: block;
+    }
+    .whywe__section1__block1 h1{
+        font-size: 28px;
+    }
+    .swiper7 .swiper-pagination {
+        top: 98.5%;
+    }
+    .whywe__section1__block1 p {
+        font-size: 16px
+    }
+    .services__wrapper{
+        display: none;
+    }
+    .slick-slide.slider3__item{
+        opacity: 1;
+    }
 }
 
 .catalog__button button a {
@@ -13501,6 +13523,46 @@ details p span {
     }
     .container4 {
         max-width: 343px;
+    }
+    
+    .offer {
+        margin: 24px 0 84px 0;
+    }
+    
+    .advantages__item .title {
+        width: 250px;
+    }
+    
+    .emish {
+        width: 170px !important;
+    }
+    
+    .number-emish {
+        padding: 60px 0 !important;
+    }
+    
+    .news__title {
+        line-height: inherit !important;
+    }
+    
+    .daje-br-kpanq {
+        display: block;
+    }
+    
+    .offer__wrapper p {
+        margin: 12px 0 24px 0;
+    }
+    
+    .swiper-emish {
+        padding: 24px 0 25px 0 !important;
+    }
+    
+    .news__item {
+        padding: 16px !important;
+    }
+    
+    .mobile-emish {
+        padding: 0 !important;
     }
 
     .your-application-send {
@@ -13803,7 +13865,36 @@ details p span {
     }
 
     .mobile__wrapper {
-        padding: 32px 16px;
+        padding: 32px 16px 20px 16px;
+    }
+    
+    .partner__title {
+        margin-bottom: 24px;
+    }
+    
+    .partner-emish {
+        padding: 60px 0 0 0 !important; 
+    }
+    
+    .events-emish {
+        padding: 55px 0 !important;
+        padding-bottom: 40px !important
+    }
+    
+    .partner__title.title-2 {
+        margin-bottom: 12px !important;
+    }
+    
+    .events__item_text {
+        max-width: 258px;
+    }
+    
+    .swiper-emish {
+        padding: 0 !important
+    }
+    
+    .events__button {
+        margin-top: 24.5px;
     }
 
     section.group {
