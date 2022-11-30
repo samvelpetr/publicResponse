@@ -9693,6 +9693,13 @@ details p span {
 .sendDiv p a {
     color: #1579D3;
 }
+
+.window-one__text .windowLink1{
+    justify-content: center;
+}
+
+.window-one__text ul li p{
+    color: rgba(44, 59, 72, 0.8);}
 @media screen and (max-width:1630px) {
     .expense__img {
         right: -200px;
@@ -13211,10 +13218,19 @@ details p span {
     }
 
     .hidden {
-        top: 0;
-        left: 0;
+        top: -192px;
+        left: -302px;
+        padding: 24px 18px;
+        width: 288px;
+        height: 220px;
+        box-sizing: border-box;
     }
-
+    .hidden:before{
+        top: 173px;
+        left: 283px;
+        bottom: 20px;
+        transform:rotate(180deg)
+    }
     .dlg-modal1 {
         padding: 20px 16px;
         width: 343px;
@@ -13507,6 +13523,168 @@ details p span {
     .slick-slide.slider3__item{
         opacity: 1;
     }
+    .ktl-optn-list{
+        padding: 24px 12px;
+    }
+    .ktl-optn-item{
+        gap: 16px;
+    }
+    .ktl-list-group h3{
+        margin-bottom: 24px;
+    }
+    .group-wrp{
+        gap: 56px;
+    }
+    .group-item{
+        padding-top: 0 ;
+    }
+    .group-text p{
+        margin-bottom: 40px;
+    }
+    .group-item{
+        width: 343px;
+    }
+    .group-prc-n{
+        margin-right: 132px;
+    }
+    .btn-group{
+        width: 100%;
+        height: 54px;
+    }
+    .contant-main-cont{
+        background: #f8f8f8;
+    }
+    .media-info-title{
+        margin-top: 20px;
+    }
+    .content-media{
+        margin-bottom: 40px;
+    }
+    .contant-main-cont{
+        padding-bottom: 24px;
+        border-radius: 0 0 16px 16px;
+    }
+    .p-tabs{
+        overflow-x: hidden;
+        padding-bottom: 10px;
+    }
+    .p-tabs h1{
+        margin-top: 20px;
+        line-height: 104%;
+    }
+    .p-tabs .swiper-wrapper{
+        padding-top: 0;
+    }
+    .window-one{
+        padding: 40px 0;
+    }
+    .window-one__text h3{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .window-one__text{
+        padding: 20px 16px;
+    }
+    .window-one__text ul li:last-child{
+        margin-bottom: 24px;
+    }
+    .partner{
+        padding: 40px 0 ;
+    }
+    .partner .swiper-wrapper{
+        padding: 0;
+    }.partner__item div{
+        padding: 20px 16px 28px;
+    }
+    .partner__title.title-2 {
+        margin-bottom: 24px !important;
+    }
+    .events__item{
+        padding: 20px 16px;
+    }
+    .window-two{
+        padding: 40px 0;
+    }
+    .window-two__text .button{
+        text-align: left;
+    }
+    .window-two__text{
+        padding: 24px 16px;
+        margin-bottom: 36px;
+    }
+    .phone-cart{
+        position: relative;
+        height: 410px;
+    }
+    .window-two__block .phone-cart img{
+        position: absolute ;
+        max-width: 114%;
+        top: -103px;
+        left: -11px;
+    }
+    .window-two__block > div > h3{
+        line-height: 26.4px;
+    }
+    .window-two__block ul li p{
+        margin-left: 12px;
+    }
+    .window-two__block .windows__link{
+        margin-top: 32px;
+    }
+    .expense{
+        padding: 32px 0;
+    }
+    .expense__wrapper > p{
+        padding-bottom: 4px;
+    }
+    .expense__item-text-2{
+        font-size: 16px !important;
+    }
+    .window-three{
+        padding: 40px 0;
+        gap: 16px;
+    }
+    .window-three__block1__text{
+        width: 255px;
+    }
+    .window-three__block1_divPar1 > div{
+        justify-content: space-between;
+    }
+    .window-three__block1{
+        padding: 20px 16px;
+    }
+    .window-three__block1__text__br{
+        display: none;
+    }
+    .window-three__block1_divPar1{
+        margin-bottom: 28px;
+    }
+    .window-four{
+        padding: 40px 0;
+    }
+    .window-four__text{
+        padding: 20px 16px;
+    }
+    .window-four__text > h3{
+        margin-bottom: 20px;
+    }
+    .window-four__list p{
+        margin: 0;
+    }
+    .window-four__qrcode{
+        box-sizing: border-box;
+        padding: 20px 24px;
+    }
+    .window-four__qrcode h3 {
+        margin-bottom: 0;
+    }
+    .window-four__qrcode .ResoponseWindowBut{
+        margin-top: 16px !important;
+        gap: 12px !important;
+    }
+    .window-four__qrcode  .ResoponseWindowBut button{
+        margin-bottom: 0;
+    }
 }
 
 .catalog__button button a {
@@ -13524,7 +13702,14 @@ details p span {
     .container4 {
         max-width: 343px;
     }
-    
+    .window-two__block .phone-cart img{
+        max-width: 125%;
+        top: -78px;
+        left: -25px;
+    }
+    .phone-cart{
+        height: 295px;
+    }
     .offer {
         margin: 24px 0 84px 0;
     }
@@ -13873,19 +14058,17 @@ details p span {
     }
     
     .partner-emish {
-        padding: 60px 0 0 0 !important; 
+        padding: 60px 0 40px 0 !important; 
     }
     
     .events-emish {
-        padding: 55px 0 !important;
+        padding: 40px 0 !important;
         padding-bottom: 40px !important;
         width: 100vw;
         overflow-x: hidden;
     }
     
-    .partner__title.title-2 {
-        margin-bottom: 12px !important;
-    }
+    
     
     .events__item_text {
         max-width: 258px;
