@@ -13685,6 +13685,33 @@ details p span {
     .window-four__qrcode  .ResoponseWindowBut button{
         margin-bottom: 0;
     }
+    .window-five{
+        padding: 40px 0;
+    }
+    .window-five .swiper-wrapper{
+        padding: 0;
+    }
+    .sberSlider__item h3{
+        font-size: 24px;
+    }
+    .sberSlider__item{
+        padding-bottom: 34px;
+    }
+    .swiper4 .swiper-pagination{
+        left: 56% !important;
+        bottom: 30px !important;
+    }
+    .sberSlider__item div p{
+        font-family: 'Roboto-Regular-Medium';
+        color: rgba(44, 59, 72, 0.8);
+        line-height: 18px;
+    }
+    .sberSliderLastItem p{
+        width: 80% !important;
+    }
+    .sberSliderLastItem {
+        padding-bottom: 52px;
+    }
 }
 
 .catalog__button button a {
@@ -14185,7 +14212,8 @@ details p span {
     }
 
     .swiper4 .swiper-pagination {
-        bottom: 60px !important;
+        bottom: 29px !important;
+        left: 54.5% !important;
     }
 
     .container1,
