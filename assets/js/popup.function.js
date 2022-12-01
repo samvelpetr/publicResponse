@@ -186,7 +186,7 @@ var closeX = document.querySelector(".closerX");
 btn__bt.addEventListener("click", function (event) {
   event.preventDefault();
   popupP.classList.remove("hidden");
-
+  document.body.classList.add('overflowHid')
 });
 
 btn.addEventListener("click", function (event) {
@@ -197,6 +197,7 @@ popupP.addEventListener("click", function (event) {
   e = event || window.event
   if (e.target == this) {
     popupP.classList.add("hidden");
+
   }
 });
 popup.addEventListener("click", function (event) {
@@ -207,6 +208,7 @@ popup.addEventListener("click", function (event) {
 });
 closeX.addEventListener("click", function (event) {
   event.preventDefault();
+  document.body.classList.remove('overflowHid')
   popupP.classList.add("hidden");
 });
 close.addEventListener("click", function (event) {

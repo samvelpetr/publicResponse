@@ -175,23 +175,33 @@
             <div class="whywe__section2__par">
                 <div class="whywe__section2__par__item parItem1">
                     <img src="./assets/image/whywe/icon1.png" alt="">
-                    <p>Установим бесплатно</p>
-                    <span>Мы меняем домофон за счёт средств компании, оплата от жителей не потребуется</span>
+                    <div>
+                        <p>Установим бесплатно</p>
+                        <span>Мы меняем домофон за счёт средств компании, оплата от жителей не потребуется</span>
+                    </div>
                 </div>
                 <div class="whywe__section2__par__item parItem2">
                     <img src="./assets/image/whywe/icon2.png" alt="">
-                    <p>Сохраним тариф</p>
-                    <span>Мы сохраняем ваш текущий тариф, стоимость обслуживания домофона не изменится</span>
+                    <div>
+
+                        <p>Сохраним тариф</p>
+                        <span>Мы сохраняем ваш текущий тариф, стоимость обслуживания домофона не изменится</span>
+                    </div>
                 </div>
                 <div class="whywe__section2__par__item parItem3">
                     <img src="./assets/image/whywe/icon3.png" alt="">
-                    <p>Обеспечим ключами</p>
-                    <span>Выдаём комплект бесплатных ключей. Дополнительные ключи можно заказать оформив заявку</span>
+                    <div>
+                        <p>Обеспечим ключами</p>
+                        <span>Выдаём комплект бесплатных ключей. Дополнительные ключи можно заказать оформив заявку</span>
+                    </div>
                 </div>
                 <div class="whywe__section2__par__item parItem1">
                     <img src="./assets/image/whywe/icon4.png" alt="">
-                    <p>Подключим трубки</p>
-                    <span>Новая система совместима с вашей трубкой в квартире, мы все подключим и настроим</span>
+                    <div>
+
+                        <p>Подключим трубки</p>
+                        <span>Новая система совместима с вашей трубкой в квартире, мы все подключим и настроим</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -215,6 +225,17 @@
                             <p>Обратиться в компанию можно удобным для вас способом: по телефону, на сайте, в социальных
                                 сетях или мессенджерах. Наши специалисты всегда на связи и принимают заявки 7 дней
                                 в неделю.</p>
+                        </div>
+                    </div>
+                    <div class="foto__block1">
+                        <div class="slider3 slider2">
+                            <div class="slick-slide slider3__item"><img src="./assets/image/service/img1.png" alt=""></div>
+                            <div class="slick-slide slider3__item"><img src="./assets/image/service/img2.png" alt=""></div>
+                            <div class="slick-slide slider3__item"><img src="./assets/image/service/img3.png" alt=""></div>
+                            <div class="slick-slide slider3__item"><img src="./assets/image/service/img4.png" alt=""></div>
+                            <div class="slick-slide slider3__item"><img src="./assets/image/service/img5.png" alt=""></div>
+                            <div class="slick-slide slider3__item"><img src="./assets/image/service/img6.png" alt=""></div>
+                            <div class="slick-slide slider3__item"><img src="./assets/image/service/img7.png" alt=""></div>
                         </div>
                     </div>
                     <div class="foto__block">
@@ -475,6 +496,8 @@
             </div>
         </div>
     </footer>
+    <script src="assets\js\jquery-3.5.1.min.js"></script>
+    <script src="assets\js\slick.min.js"></script> 
     <script src="./assets/js/haway.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
@@ -522,6 +545,22 @@
                 isPlay = !isPlay;
             }
         }
+    </script>
+    <script>
+        $(document).ready(function () {
+           
+            $(".slider2").slick({
+                arrows: false,
+                dots: true,
+                slidesToShow: 1.2,
+                slidesToScroll: 1,
+                infinite: false,
+                variableWidth: true,
+                centerMode:true
+                // initialSlide:2
+            });
+            
+        })
     </script>
 </body>
 
