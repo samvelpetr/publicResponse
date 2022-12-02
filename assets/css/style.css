@@ -9845,6 +9845,9 @@ details p span {
     font-size: 14px;
     line-height: 112%;
 }
+.control__title2{
+    display: none;
+}
 @media screen and (max-width:1630px) {
     .expense__img {
         right: -200px;
@@ -13293,11 +13296,21 @@ details p span {
 
     .attention__title1 {
         display: block;
-        padding: 5px 29px;
+        padding: 5px 0;
         margin-bottom: 12px;
         font-size: 28px;
     }
-
+    .notification__item{
+        width: 335px;
+    }
+    .notification__card__1 > img{
+        left: 14px;
+    }.notification__item img:last-child{
+        left: 8px;
+    }
+    .notimg1{
+        left: 0 !important;
+    }
     .attention__qr {
         margin-bottom: 20px;
     }
@@ -14004,7 +14017,7 @@ details p span {
         margin-bottom: 10px;
     }
 
-    .swiper-slide p {
+    /* .swiper-slide p {
         color: #2C3B48;
         font-family: 'Myriad Pro SemiBold';
         font-style: normal;
@@ -14012,7 +14025,7 @@ details p span {
         font-size: 20px;
         line-height: 116%;
         width: 320px;
-    }
+    } */
 
     .swiper-slide__item__date p {
         color: #064288;
@@ -14366,13 +14379,13 @@ details p span {
         margin-bottom: 10px;
     }
 
-    .swiper-slide p {
+    /* .swiper-slide p {
         color: rgba(44, 59, 72, 0.8);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 124%;
-    }
+    } */
 
     .swiperBlock .swiper-wrapper {
         padding-bottom: 40px;
@@ -14797,6 +14810,9 @@ details p span {
     }
     .answer__button{
         height: 56px;
+    }
+    .control__title2{
+        display: block;
     }
 }
 
