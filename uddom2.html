@@ -254,14 +254,14 @@
                             <p>Представитель компании посетит каждую квартиру и выдаст комплект бесплатных ключей. Информация о дате и времени выдачи будет указана в объявлении на вашем подъезде.</p>
                             <p>Дополнительные ключи можно заказать у нашего представителя или оформив заявку</p>
                         </div>
-                        <a href="">Заказать ключи</a>
+                        <a href="">Заказать ключи <img src="./assets/image/uddom/Arrow---Right.png" alt=""></a>
                     </div>
                     <div class="uddom2__info__card__item">
                         <div class="info__card__item___textPar">
                             <h3>Оплачивайте услуги в «Цифрал-Сервис»</h3>
                             <p>Теперь вашей домофонной компанией является «Цифрал-Сервис». Тариф на обслуживание домофона остался прежним. Ознакомьтесь со способами оплаты и выберете наиболее удобный для вас.</p>
                         </div>
-                        <a href="">Способы оплаты</a>
+                        <a href="">Способы оплаты <img src="./assets/image/uddom/Arrow---Right.png" alt=""></a>
                     </div>
                     <div class="uddom2__info__card__item">
                         <div class="info__card__item___textPar">
@@ -269,7 +269,7 @@
                             <p>Открытие двери в подъезд через приложение, онлайн-просмотр видео с камеры домофона, видеоархив с возможностью скачивания, приём видеовызовов и многое другое</p>
                             <p>Приложение является отдельной нетарифицируемой услугой и предоставляется при отсутствии задолженности по услуге техническое обслуживание домофона</p>
                         </div>
-                        <a href="">О приложении</a>
+                        <a href="">О приложении  <img src="./assets/image/uddom/Arrow---Right.png" alt=""></a>
                     </div>
                     <div class="uddom2__info__card__item">
                         <div class="info__card__item___textPar">
@@ -277,7 +277,7 @@
                             <p>Мы осуществляем обслуживание не только домофонной панели, но и входной группы. Наши специалисты выполняют профилактические работы для избежания повреждений. Если несмотря на проверки все же произошла поломка, оставьте заявку удобным для вас способом.</p>
                             <p>Кроме этого вы можете оставить заявку на установку новой трубки, видеомонитора или на устранение неисправности в мобильном приложении</p>
                         </div>
-                        <a href="">Оставить заявку</a>
+                        <a href="">Оставить заявку <img src="./assets/image/uddom/Arrow---Right.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -285,6 +285,8 @@
     </section>
     <section class="control control2">
         <div class="control__wrapper">
+            <div class="container4">
+
             <div class="control__img">
                 <img src="assets/image/uddom/phoneCard.png" alt="">
             </div>
@@ -400,6 +402,8 @@
                 </div>
                 <button class="control__button">Подробнее</button>
             </div>
+        </div>
+
     </section>
     <section class="partner">
         <div class="container">
@@ -493,7 +497,7 @@
                             <path d="M1 12.9995H25" stroke="#2C3B48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg></div>
                 </div>
-                <p>Подать заявку на установку цифрового домофона можно на странице <span> «Умный домофон». </span>
+                <p>Подать заявку на установку цифрового домофона можно на странице <a> «Умный домофон». </a>
                     Заполните форму внизу страницы, указав свои контактные данные. Наш специалист свяжется с вами
                     после обработки обращения.</p>
             </div>
@@ -541,7 +545,7 @@
                         <a href="index.html"><img src="assets\image\logo.png" alt=""></a>
                     </div>
                     <p class="footer__phone">+7 812 201-00-35</p>
-                    <p class="footer__text"=="">Ежедневно 08:00–20:00</p>
+                    <p class="footer__text">Ежедневно 08:00–20:00</p>
                     <div class="footer__contacts">
                         <a href="" class="footer__vk"><img src="assets\image\VK_icon.png" alt="логотип вконтакте"></a>
                         <a href="" class="footer__ok"><img src="assets/image/footlog/odnoklass.png" alt="логотип одноклассники"></a>
@@ -675,17 +679,17 @@
     </footer>
 
    <script>
-        const details = document.querySelectorAll('.question__details');
-        const detailsP = document.querySelectorAll('.question__details p');
-        const detailsDiv = document.querySelectorAll('.question__summary > div')
+        // const details = document.querySelectorAll('.question__details');
+        // const detailsP = document.querySelectorAll('.question__details p');
+        // const detailsDiv = document.querySelectorAll('.question__summary > div')
 
-        details.forEach((deta, i) => {
-            deta.onclick = () => {
-                deta.classList.toggle('addedDetails');
-                detailsP[i].classList.toggle('addedP')
-                detailsDiv[i].classList.toggle('addedDiv')
-            }
-        })
+        // details.forEach((deta, i) => {
+        //     deta.onclick = () => {
+        //         deta.classList.toggle('addedDetails');
+        //         detailsP[i].classList.toggle('addedP')
+        //         detailsDiv[i].classList.toggle('addedDiv')
+        //     }
+        // })
 
     </script>
    
@@ -694,23 +698,23 @@
     <script src="assets\js\slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        const inputCity = document.querySelector('.application__addres');
+        // const inputCity = document.querySelector('.application__addres');
         const arrOfCitys = [...document.querySelectorAll('.citys__filter__element')]
-        inputCity.addEventListener('input', () => {
-            arrOfCitys.forEach(elem => {
-                elem.classList.remove('Dblock')
-            })
-            arrOfCitys.forEach((el, index) => {
-                if (inputCity.value == '') {
-                    arrOfCitys.forEach(elem => {
+        // inputCity.addEventListener('input', () => {
+        //     arrOfCitys.forEach(elem => {
+        //         elem.classList.remove('Dblock')
+        //     })
+        //     arrOfCitys.forEach((el, index) => {
+        //         if (inputCity.value == '') {
+        //             arrOfCitys.forEach(elem => {
 
-                        elem.classList.remove('Dblock')
-                    })
-                } else if (inputCity.value == el.textContent.substring(0, inputCity.value.length)) {
-                    el.classList.add('Dblock')
-                }
-            })
-        })
+        //                 elem.classList.remove('Dblock')
+        //             })
+        //         } else if (inputCity.value == el.textContent.substring(0, inputCity.value.length)) {
+        //             el.classList.add('Dblock')
+        //         }
+        //     })
+        // })
         const details = document.querySelectorAll('.question__details');
         const detailsP = document.querySelectorAll('.question__details p');
         const detailsDiv = document.querySelectorAll('.question__summary > div')
@@ -750,45 +754,45 @@
 
     <script>
         const clear = document.querySelectorAll('.input-clear');
-        const adress = document.querySelector('.application__addres');
+        // const adress = document.querySelector('.application__addres');
         const name = document.querySelector('.application__name');
         const phone = document.querySelector('.application__phone');
 
-        adress.oninput = () => {
-            if (adress.value.length > 0) {
-                clear[0].style.display = 'block';
-            } else {
-                clear[0].style.display = 'none';
-            }
-        }
+        // adress.oninput = () => {
+        //     if (adress.value.length > 0) {
+        //         clear[0].style.display = 'block';
+        //     } else {
+        //         clear[0].style.display = 'none';
+        //     }
+        // }
 
-        name.oninput = () => {
-            if (name.value.length > 0) {
-                clear[1].style.display = 'block';
-            } else {
-                clear[1].style.display = 'none';
-            }
-        }
+        // name.oninput = () => {
+        //     if (name.value.length > 0) {
+        //         clear[1].style.display = 'block';
+        //     } else {
+        //         clear[1].style.display = 'none';
+        //     }
+        // }
 
-        phone.oninput = () => {
-            if (phone.value.length > 0) {
-                clear[2].style.display = 'block';
-            } else {
-                clear[2].style.display = 'none';
-            }
-        }
-        clear[0].onclick = function() {
-            adress.value = ''
-            this.style.display = 'none'
-        }
-        clear[1].onclick = function() {
-            name.value = ''
-            this.style.display = 'none'
-        }
-        clear[2].onclick = function() {
-            phone.value = ''
-            this.style.display = 'none'
-        }
+        // phone.oninput = () => {
+        //     if (phone.value.length > 0) {
+        //         clear[2].style.display = 'block';
+        //     } else {
+        //         clear[2].style.display = 'none';
+        //     }
+        // }
+        // clear[0].onclick = function() {
+        //     adress.value = ''
+        //     this.style.display = 'none'
+        // }
+        // clear[1].onclick = function() {
+        //     name.value = ''
+        //     this.style.display = 'none'
+        // }
+        // clear[2].onclick = function() {
+        //     phone.value = ''
+        //     this.style.display = 'none'
+        // }
 
     </script>
     
